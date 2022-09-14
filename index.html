@@ -20,7 +20,23 @@
                 <img src="./assets/svgs/logo-section/logo1.svg" alt="">
                 <img src="./assets/svgs/logo-section/logo2.svg" alt="">
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <div class="fa-solid fa-bars">
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner horizontal"></div>
+                  <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                  <ul class="sidebarMenuInner">
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Projects</a></li>
+                    <li><a href="#" target="_blank">Blog</a></li>
+                    <li><a href="#" target="_blank">Book a call</a></li>
+                  </ul>
+                </div>
+                </div>
             <div class="nav-links">
                 <a href="#">About</a>
                 <a href="#">Services</a>
@@ -34,7 +50,8 @@
             <div class="left-side">
                 <h1>I design products</h1>
                 <span>that delight and <br> inspire people</span>
-                <p>Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing
+                <p>Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for
+                    fast-growing
                     startups.</p>
                 <div class="download-cv">
                     <button>Book a call</button>
@@ -46,8 +63,10 @@
                 <img src="./assets/svgs/introduction/file1.svg" alt="">
             </div>
         </section>
-        <p>Trusted by</p>
         <div class="trusted-by-center">
+            <div class="text-section">
+                <p>Trusted by</p>
+            </div>
             <div class="trusted-by">
                 <div class="slide">
                     <img src="./assets/svgs/trusted-by-center/icon1.svg" alt="">
@@ -66,10 +85,9 @@
         <div class="services">
             <h6>SERVICES</h6>
             <h1>Design that solves problems, one product at a time.</h1>
-
             <div class="services-details">
                 <div class="service">
-                    <img src="./assets/icons/IMAGE (2).png" alt="">
+                    <img src="./assets/images/IMAGE (2).png" alt="">
                     <h3>What can I do for you</h3>
                     <p>Faster, better products that your users love. Here's all the services I provide:</p>
                     <ul style="list-style-type: square">
@@ -80,7 +98,7 @@
                 </div>
 
                 <div class="service">
-                    <img src="./assets/icons/IMAGE (3).png" alt="">
+                    <img src="./assets/images/IMAGE (3).png" alt="">
                     <h3>Applications I'm fluent in</h3>
                     <p> Every designer needs the right tools to do perfect job.
                         Thankfully, I'm multilingual</p>
@@ -93,7 +111,7 @@
                 </div>
 
                 <div class="service">
-                    <img src="./assets/icons/IMAGE (4).png" alt="">
+                    <img src="./assets/images/IMAGE (4).png" alt="">
                     <h3>What you can expect</h3>
                     <p>I design products that are more than pretty. I make them shippable
                         and usable.</p>
@@ -189,7 +207,7 @@
         <div class="latest-blog-section">
             <div class="left-side">
                 <h4>BLOGS</h4>
-                <h1>Latest BLOGS</h1>
+                <small>Latest BLOGS</small>
                 <a href="#">View All <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -294,7 +312,8 @@
                 </div>
                 <div class="right-side">
                     <p>Over the past 12 years, I've worked with a diverse range of clients, from startups to
-                        Fortune 500 companies. I love crafting interfaces that delight users and help businesses
+                        Fortune 500 companies. I love crafting interfaces that delight users and help
+                        businesses
                         grow.</p>
                 </div>
             </div>
@@ -368,7 +387,7 @@
                     <img src="./assets/svgs/study/icon2.svg" alt="">
                     <div class="work-top-section">
                         <div class="logo-section">
-                            <img src="./assets/icons/IMAGE (5).png" alt="">
+                            <img src="./assets/images/IMAGE (5).png" alt="">
                         </div>
                         <div class="location-section">
                             <h2>SpaceFleet</h2>
@@ -383,7 +402,7 @@
                     </div>
                     <div class="work-center-section">
                         <div class="logo-section">
-                            <img src="./assets/icons/IMAGE (6).png" alt="">
+                            <img src="./assets/images/IMAGE (6).png" alt="">
                         </div>
                         <div class="location-section">
                             <h2>MusicMash</h2>
@@ -398,7 +417,7 @@
                     </div>
                     <div class="work-bottom-section">
                         <div class="logo-section">
-                            <img src="./assets/icons/IMAGE (7).png" alt="">
+                            <img src="./assets/images/IMAGE (7).png" alt="">
                         </div>
                         <div class="location-section">
                             <h2>Kingdom</h2>
@@ -428,7 +447,8 @@
                         <img src="./assets/svgs/news/icon.svg" alt="">
                     </div>
                     <div class="text-section">
-                        <h1>Jade helped us build a software so <br> intuitive that it didn't need a <br> walkthrough. He
+                        <h1>Jade helped us build a software so <br> intuitive that it didn't need a <br>
+                            walkthrough. He
                             solved
                             complex <br> problems with brilliant design.</h1>
                     </div>
@@ -454,76 +474,124 @@
             </div>
             <div class="blog-section">
                 <div class="left-side">
-                    <div class="blog">
-                        <div class="blog-left">
-                            <h2>What type of projects do you take on?</h2>
+                    <div class="accordion">
+                        <div class="accordion-item" id="question1">
+                            <a class="accordion-link" href="#question1">
+                                <div class="flex">
+                                    <h3>What type of projects do you take on?</h3>
+                                </div>
+                            </a>
+                            <div class="answer">
+                                <small>Answer-<span>Lorem ipsum dolor sit amet.</span></small>
+                            </div>
                         </div>
-                        <div class="blog-right">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
+                        <div class="accordion-item" id="question2">
+                            <a class="accordion-link" href="#question2">
+                                <div class="flex">
+                                    <h3>What is your hourly rate?</h3>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What is your hourly rate?</h2>
+                        <div class="accordion-item" id="question3">
+                            <a class="accordion-link" href="#question3">
+                                <div class="flex">
+                                    <h3>What time-zone do you work in?</h3>
+                                </div>
+                            </a>
                         </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What time-zone do you work in?</h2>
-                        </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What is the typical timeline for a project?</h2>
-                        </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                <div>
+                                    <h3>What is the typical timeline for a project?</h3>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="right-side">
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>How do you charge for projects ?</h2>
+                    <div class="accordion">
+                        <div class="accordion-item" id="question1">
+                            <a class="accordion-link" href="#question1">
+                                <div class="flex">
+                                    <h3>How do you charge for projects ?</h3>
+                                </div>
+                            </a>
                         </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
+                        <div class="accordion-item" id="question2">
+                            <a class="accordion-link" href="#question2">
+                                <div class="flex">
+                                    <h3>What does your design process look like?</h3>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What does your design process look like?</h2>
+                        <div class="accordion-item" id="question3">
+                            <a class="accordion-link" href="#question3">
+                                <div class="flex">
+                                    <h3>What metrics do you use to measure success?</h3>
+                                </div>
+                            </a>
                         </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What metrics do you use to measure success?</h2>
-                        </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <div class="blog-top">
-                            <h2>What if I need help after the project is complete?</h2>
-                        </div>
-                        <div class="blog-bottom">
-                            <img src="./assets/svgs/faq/arrow-icon.svg" alt="">
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                <div>
+                                    <h3>What if I need help after the project is complete?</h3>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <div class="footer-about-section">
+            <div class="text-section">
+                <h2>Ready to make something kickass?</h2>
+                <h4>Let's get on a call.</h4>
+            </div>
+            <div class="about-section">
+                <div class="left-side">
+                    <div class="portfolio-creator-section">
+                        <img src="./assets/svgs/about/icon1.svg" alt="">
+                    </div>
+                    <div class="adress-section">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://goo.gl/maps/enqXEB9oxtNeAEz18">4353 Delaware Avenue, San Francisco, USA</a>
+                    </div>
+                    <div class="gmail-section">
+                        <i class="fa fa-envelope"></i>
+                        <h5>hi@thefolio.com</h5>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="nav-links-top">
+                        <h4>About</h4>
+                        <h4>Contact</h4>
+                        <h4>Dribbble</h4>
+                    </div>
+                    <div class="nav-links-center">
+                        <h4>Services</h4>
+                        <h4>Blog</h4>
+                        <h4>Instagram</h4>
+                    </div>
+                    <div class="nav-links-bottom">
+                        <h4>Experience</h4>
+                        <h4>Projects</h4>
+                        <h4>Twitter</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arr-section">
+            <i class="">&#169;</i>
+            <h4>All rights reserved.</h4>
+            <h5>Sumit Hegde</h5>
+            <h5>. Powered by</h5>
+            <h5>Webflow /</h5>
+            <h5>Image License Info /</h5>
+            <h5>Instructions /</h5>
+            <h5>Changelog /</h5>
+            <h5>Style Guide</h5>
+        </div>
+
     </div>
 
 
