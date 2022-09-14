@@ -444,6 +444,12 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     gap: 10px;
 }
 
+.card .card-bottom h5 {
+    color: #3C46FF;
+    letter-spacing: 4px;
+    font-size: large;
+}
+
 .card .card-bottom a {
     text-decoration: none;
 }
@@ -563,8 +569,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .product-design-section-text .right-side {
-    flex-basis: 40%;
+    flex-basis: 50%;
     color: #666666;
+    font-size: 20px;
+    padding-top: 10px;
 }
 
 .pds-image {
@@ -1040,10 +1048,25 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         display: none;
     }
 
+    .trusted-by-center .text-section p {
+        justify-content: center;
+        font-size: 20px;
+    }
+
     .trusted-by .slide:nth-child(1) {
-        width: 350px;
-        height: 40px;
+        width: 340px;
+        height: 50px;
+        justify-content: center;
         align-items: center;
+        padding-right: 30%;
+    }
+
+    .trusted-by .slide img {
+        width: 340px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30%;
     }
 
     .trusted-by .slide:nth-child(2) {
