@@ -4,12 +4,6 @@
 
 
 @import url(reset.css);
-@import url(font.css);
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../Fonts/Roboto-Regular.ttf);
-}
 
 
 * {
