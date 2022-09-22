@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../Fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Rooto-Regular';
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../Fonts/Roboto-Thin.ttf);
+}
